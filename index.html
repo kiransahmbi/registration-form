@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration</title>
+
+  </head>
+  <body>
+    <section>
+      <header>
+        <img id="banner" src="banner.png">
+        <h1 id="registrationHeader">Registration</h1>
+        <p id="registrationSubtext">Please complete all the fields below</p>
+      </header>
+
+      <main>
+        <form id="RegistrationForm" autocomplete="on">
+          <fieldset class="user-data">
+
+            <label for="fName">First Name</label>
+            <input id="fName" type="text" required>
+
+            <label for="lName">Last Name</label>
+            <input id="lName" type="text" required>
+
+            <label for="address">Address</label>
+            <input id="address" type="text" required>
+
+            <label for="city">City</label>
+            <input id="city" type="text" required>
+
+            <label for="postalCode">Postal Code</label>
+            <input id="postalCode" type="text" placeholder="a0a0a0" required pattern="[a-zA-Z][0-9][a-zA-Z][0-9][a-zA-Z][0-9]">
+
+            <label for="province">Province</label>
+            <input id="province" type="text" list="provinceList" required pattern="QC|ON|MC|SK|AB|BC">
+            <datalist id="provinceList">
+              <option value="QC">
+              <option value="ON">
+              <option value="MN">
+              <option value="SK">
+              <option value="AB">
+              <option value="BC">
+            </datalist>
+
+            <label for="age">Age</label>
+            <input id="age" min="18" type="number" required>
+
+            <label for="password">Password</label>
+            <input id="password" type="password" required>
+
+            <label for="passwordC">Confirm Password</label>
+            <input id="passwordC" type="password" required>
+
+            <label for="email">Email Address</label>
+            <input id="email" required>
+
+          </fieldset>
+
+          <button type="submit" class="button" id="registerBtn" name="register">Register!</button>
+          <input type="reset" class="button" id="reset" value="Clear Form">
+        </form>
+        <div id="registrationComplete">
+            Thank you for registering, your account has been created.
+        </div>
+      </main>
+    </section>
+    <footer>
+      © KS 2021
+    </footer>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
