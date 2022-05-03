@@ -1,4 +1,4 @@
-# [Registration Form](https://kiransahmbi.github.io/real-estate-website)
+# [Registration Form](https://kiransahmbi.github.io/registration-form)
 
 Registration Form with Validation Checks.
 
